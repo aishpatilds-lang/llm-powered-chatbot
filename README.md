@@ -1,47 +1,137 @@
-# AI Chatbot with Memory
+# 🤖 LLM-Powered Chatbot & AI Data Analyst Bot
 
-This project is an AI chatbot built using Streamlit, LangChain, and Groq API.  
-It can remember conversation within a session and provide context-aware responses through a simple and interactive interface.
+An end-to-end **Generative AI application** built using **LangChain**, **Groq API (Llama 3.3-70B)**, **Streamlit**, **Pandas**, and **Plotly**.
 
-Tech used:
+This repository contains two AI-powered applications:
+
+- 💬 **AI Chatbot with Session Memory** for context-aware conversations.
+- 📊 **AI Data Analyst Bot** that transforms natural language questions into executable Pandas code, performs data analysis, and generates interactive visualizations.
+
+The project demonstrates practical applications of **Large Language Models (LLMs)** for conversational AI and intelligent business analytics.
+
+---
+
+# 🚀 Features
+
+## 💬 AI Chatbot
+
+- Multi-turn conversational AI
+- Session-based memory using LangChain
+- Context-aware responses
+- Fast inference with Groq API (Llama 3.3-70B)
+- Interactive Streamlit interface
+
+---
+
+## 📊 AI Data Analyst Bot
+
+- Upload CSV datasets
+- Ask questions in natural language
+- Automatic Pandas code generation
+- Execute generated Python code safely
+- Automated statistical analysis
+- Interactive Plotly visualizations
+- Business insight generation
+- Downloadable analysis results
+
+---
+
+# 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Programming Language | Python |
+| Framework | Streamlit |
+| LLM | Groq API (Llama 3.3-70B) |
+| AI Framework | LangChain |
+| Data Processing | Pandas |
+| Data Visualization | Plotly |
+| Environment Variables | python-dotenv |
+| Version Control | Git & GitHub |
+
+---
+
+# 🏗️ Project Architecture
+
+```text
+                     User
+                       │
+                       ▼
+                 Streamlit UI
+                       │
+         ┌─────────────┴─────────────┐
+         ▼                           ▼
+  AI Chatbot                  AI Data Analyst
+         │                           │
+         ▼                           ▼
+     LangChain                  LangChain
+         │                           │
+         ▼                           ▼
+ Groq API (Llama 3.3-70B)     Groq API (Llama 3.3-70B)
+         │                           │
+         ▼                           ▼
+ Context-Aware Replies      Pandas Code Generation
+                                     │
+                                     ▼
+                             Execute Generated Code
+                                     │
+                                     ▼
+                           Data Analysis & Plotly Charts
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+chatbot_3/
+│
+├── app.py                    # AI Chatbot
+├── data.py                   # Data processing module
+├── data_analysis_bot.py      # AI Data Analyst Bot
+├── requirements.txt
+├── README.md
+├── UI_Screenshots/
+└── .gitignore
+```
+
+---
+
+# 🎯 Skills Demonstrated
+
+- Large Language Models (LLMs)
+- Generative AI
+- LangChain
+- Prompt Engineering
 - Python
 - Streamlit
-- LangChain
-- Groq API
+- Pandas
+- Plotly
+- Data Visualization
+- API Integration
+- Business Analytics
 
-Features:
-- Maintains conversation context (session-based memory)
-- Interactive chat interface
-- Real-time responses
+---
 
-How to run:
+# 🌟 Key Highlights
 
-1. Clone the repository
-git clone <your-repo-link>
-cd chatbot_3
+- Built two LLM-powered applications using **LangChain** and **Groq API (Llama 3.3-70B)**.
+- Developed a **multi-turn conversational chatbot** with session-based memory for context-aware interactions.
+- Designed an **AI Data Analyst Bot** that converts natural language questions into executable Pandas code.
+- Generated interactive Plotly visualizations and automated business insights from uploaded CSV datasets.
+- Delivered an intuitive Streamlit interface to simplify data analysis for non-technical users.
 
-2. Create virtual environment
-python -m venv venv
-
-3. Activate environment  
-Windows:
-venv\Scripts\activate  
-Mac/Linux:
-source venv/bin/activate
-
-4. Install dependencies
-pip install -r requirements.txt
-
-5. Add API key in `.env`
-GROQ_API_KEY=your_api_key_here
-
-6. Run the app
-streamlit run app.py
+---
 
 Future improvements:
 - Add persistent memory
 - Add file upload (PDF chatbot)
-- Deploy online
 
-Author:
-Aishwarya Patil
+# 👩‍💻 Author
+
+**Aishwarya Patil**
+
+Aspiring Data Scientist | Machine Learning | Generative AI
+
+GitHub: https://github.com/aishpatilds-lang
+
