@@ -36,7 +36,7 @@ if file:
 
     if question:
 
-        # 🔥 SINGLE PROMPT (ONLY CODE)
+        #  SINGLE PROMPT (ONLY CODE)
         prompt = f"""
 You are a senior data analyst.
 
@@ -61,7 +61,7 @@ Question: {question}
         st.subheader("🧠 Generated Code")
         st.code(code)
 
-        # 🔥 EXECUTION
+        #  EXECUTION
         try:
             local_vars = {"df": df}
             exec(code, {}, local_vars)
